@@ -1,0 +1,8 @@
+<div class="shows">
+    <div class="show" *ngFor="let show of shows$ | async ">
+        <div class="name">{{show.name}}</div>
+        <div class="actors">
+            <div *ngFor="let actor of show.actors">{{actor}}</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="shows">
+  <div class="show" *ngFor="let meal of shows$ | async | paginate: { id: 'server', itemsPerPage: itemsPerPage, currentPage: pageNumber, totalItems: totalShows }">
+    <div class="name">{{meal?.name}}</div>
+  </div>
+</div>
+
+<div class="has-text-centered">
+  <div class="spinner" [ngClass]="{ 'hidden': !areShowsLoading }"></div>
+  <pagination-controls (pageChange)="updatePage($event)" id="server"></pagination-controls>
+</div>
