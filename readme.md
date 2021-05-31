@@ -6,3 +6,4 @@ The app is still pretty basic and there is a room for improvement
    Instead of firing N request for every show
 4) Shows data might be hidden behind the pipe to avoid repetitive template 
    binding of unchanged values
+5) style of two pages (search for shows and all shows) must be the same, not it's different
