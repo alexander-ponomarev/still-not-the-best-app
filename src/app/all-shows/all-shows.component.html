@@ -1,6 +1,6 @@
 <div class="shows">
-  <div class="show" *ngFor="let meal of shows$ | async | paginate: { id: 'server', itemsPerPage: itemsPerPage, currentPage: pageNumber, totalItems: totalShows }">
-    <div class="name">{{meal?.name}}</div>
+  <div class="show" *ngFor="let show of shows$ | async | paginate: { id: 'server', itemsPerPage: itemsPerPage, currentPage: pageNumber, totalItems: totalShows }">
+    <div class="name">{{show?.name}}</div>
   </div>
 </div>
 
